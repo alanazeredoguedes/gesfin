@@ -9,3 +9,10 @@ Projeto em laravel e vue para realizar o controle e gestão das finanças;
 - [Vue](#).
 - [Inertia](#).
 - [Tailwind](#).
+
+
+## Commands
+
+sail up
+sail php artisan optimize:clear
+sail npm run dev

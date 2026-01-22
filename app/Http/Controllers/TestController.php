@@ -8,7 +8,14 @@ use Inertia\Inertia;
 class TestController extends Controller
 {
 
-    public function index()
+    public function home()
+    {
+        return Inertia::render('HomePage', [
+
+        ]);
+    }
+
+    public function test()
     {
         return Inertia::render('TestPage', [
 

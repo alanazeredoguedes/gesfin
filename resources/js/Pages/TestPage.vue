@@ -1,5 +1,16 @@
 <template>
-    <h1>Hello Inertia World</h1>
+    <h1>Test Page</h1>
+    Idade: {{ age}}
+
 </template>
-<script setup>
+
+
+<script setup lang="ts">
+
+const age: number = 32;
+
+const props = defineProps<{
+    with?: number
+}>()
+
 </script>
