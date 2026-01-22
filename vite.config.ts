@@ -24,4 +24,9 @@ export default defineConfig({
             ignored: ['**/storage/framework/views/**'],
         },
     },
+    resolve: {
+        alias: {
+            'ziggy-js': '/vendor/tightenco/ziggy',
+        },
+    },
 });
