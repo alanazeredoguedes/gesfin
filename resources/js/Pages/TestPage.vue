@@ -20,7 +20,7 @@ const props = defineProps<{
 
 
     <Link :href="route('home')" class="text-blue-600 underline">
-        Ir para TestPage
+        Ir para Home Page
     </Link>
 
 

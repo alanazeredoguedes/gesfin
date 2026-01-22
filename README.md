@@ -13,6 +13,9 @@ Projeto em laravel e vue para realizar o controle e gestão das finanças;
 
 ## Commands
 
-sail up
-sail php artisan optimize:clear
-sail npm run dev
+<br> sail up
+<br> sail composer dev
+<br> sail php artisan optimize:clear
+<br> sail npm run dev
+<br> sail artisan pail -vv - Debug Command Dev
+<br> 
