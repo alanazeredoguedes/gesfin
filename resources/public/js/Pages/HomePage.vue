@@ -1,29 +1,22 @@
 <script setup lang="ts">
-import { Link } from '@inertiajs/vue3'
+import { Link } from '@inertiajs/vue3';
 
 const props = defineProps<{
-    pageName?: string
-}>()
-
+    pageName?: string;
+}>();
 </script>
 <template>
+    <h1>Public - {{ pageName }}</h1>
 
-    <h1> Public - {{ pageName }}</h1>
+    <br />
 
+    <a href="/" class="ml-4 text-blue-600 underline"> Public </a>
+    <a href="/client" class="ml-4 text-blue-600 underline"> Client </a>
+    <a href="/admin" class="ml-4 text-blue-600 underline"> Admin </a>
 
-    <br>
+    <br /><br />
 
-    <a href="/" class="text-blue-600 underline ml-4"> Public </a>
-    <a href="/client" class="text-blue-600 underline ml-4"> Client </a>
-    <a href="/admin" class="text-blue-600 underline ml-4"> Admin </a>
+    <Link :href="route('public.home')" class="text-blue-600 underline"> Ir para Public </Link>
 
-
-    <br><br>
-
-    <Link :href="route('public.home')" class="text-blue-600 underline">
-        Ir para Public
-    </Link>
-
-    <br>
-
+    <br />
 </template>

@@ -1,0 +1,4 @@
+resources/views/mail/*
+resources/admin/views/mail/*
+resources/client/views/mail/*
+resources/public/views/mail/*
