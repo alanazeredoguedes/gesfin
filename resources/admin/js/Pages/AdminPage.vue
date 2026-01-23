@@ -9,9 +9,6 @@ const props = defineProps<{
     pageName?: string
 }>()
 
-
-
-
 const routes = route().routes
 
 
@@ -19,6 +16,15 @@ const routes = route().routes
 <template>
 
     <h1> Admin - {{ pageName }}</h1>
+
+    <br>
+
+    <a href="/" class="text-blue-600 underline ml-4"> Public </a>
+    <a href="/client" class="text-blue-600 underline ml-4"> Client </a>
+    <a href="/admin" class="text-blue-600 underline ml-4"> Admin </a>
+
+    <br><br>
+
 
     <Link :href="route('admin.home')" class="text-blue-600 underline">
         Ir para Admin
@@ -37,10 +43,6 @@ const routes = route().routes
 
 
     <br> <br> <br>
-
-    <pre>{{ routes }}</pre>
-    <pre>{{ $page.props.ziggy }}</pre>
-    <pre>{{ route().routes }}</pre>
 
 
 </template>

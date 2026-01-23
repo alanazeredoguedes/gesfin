@@ -11,6 +11,13 @@ const props = defineProps<{
     <h1> Public - {{ pageName }}</h1>
 
 
+    <br>
+
+    <a href="/" class="text-blue-600 underline ml-4"> Public </a>
+    <a href="/client" class="text-blue-600 underline ml-4"> Client </a>
+    <a href="/admin" class="text-blue-600 underline ml-4"> Admin </a>
+
+
     <br><br>
 
     <Link :href="route('public.home')" class="text-blue-600 underline">

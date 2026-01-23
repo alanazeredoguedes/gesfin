@@ -42,7 +42,6 @@
         "resources/js/**/*.d.ts",
         "resources/js/**/*.vue",
 
-
         "resources/**/*.ts",
         "resources/**/*.d.ts",
         "resources/**/*.vue"
