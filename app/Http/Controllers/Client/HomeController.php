@@ -11,7 +11,7 @@ class  HomeController
     {
         Log::debug('Home Client');
 
-        return Inertia::render('Client/HomePage', [
+        return Inertia::render('HomePage', [
             "pageName" => "Client Page",
         ]);
     }

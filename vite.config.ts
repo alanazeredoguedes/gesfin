@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import tailwindcss from '@tailwindcss/vite';
 import vue from '@vitejs/plugin-vue'
+import path from 'path'
 
 export default defineConfig({
     plugins: [
@@ -10,9 +11,9 @@ export default defineConfig({
                 // 'resources/css/admin.css',
                 // 'resources/css/client.css',
                 // 'resources/css/public.css',
-                'resources/js/admin.ts',
-                'resources/js/client.ts',
-                'resources/js/public.ts',
+                'resources/admin/js/admin.ts',
+                'resources/client/js/client.ts',
+                'resources/public/js/public.ts',
             ],
             refresh: true,
         }),
@@ -34,6 +35,9 @@ export default defineConfig({
     resolve: {
         alias: {
             'ziggy-js': '/vendor/tightenco/ziggy',
+            '@admin': path.resolve(__dirname, 'resources/admin/js'),
+            '@client': path.resolve(__dirname, 'resources/client/js'),
+            '@public': path.resolve(__dirname, 'resources/public/js'),
         },
     },
 });

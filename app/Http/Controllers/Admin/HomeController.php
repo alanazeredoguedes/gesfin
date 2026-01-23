@@ -11,7 +11,17 @@ class  HomeController
     {
         Log::debug('Home Admin');
 
-        return Inertia::render('Admin/HomePage', [
+        return Inertia::render('AdminPage', [
+            "pageName" => "Admin Page",
+        ]);
+    }
+
+
+    public function test()
+    {
+        Log::debug('Test Admin');
+
+        return Inertia::render('AdminPage', [
             "pageName" => "Admin Page",
         ]);
     }

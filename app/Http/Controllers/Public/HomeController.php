@@ -11,7 +11,7 @@ class  HomeController
     {
         Log::debug('Home Public');
 
-        return Inertia::render('Public/HomePage', [
+        return Inertia::render('HomePage', [
             "pageName" => "Public Page",
         ]);
     }

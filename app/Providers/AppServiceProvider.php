@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -25,7 +26,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+
+        View::addLocation(resource_path('admin/views'));
+        View::addLocation(resource_path('client/views'));
+        View::addLocation(resource_path('public/views'));
+
        // Model::shouldBeStrict(!$this->app->isProduction());
 
         //Vite::useAggressivePrefetching();
