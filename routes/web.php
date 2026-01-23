@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\TestController;
-use Illuminate\Support\Facades\Route;
+declare(strict_types=1);
 
-Route::get("/", [TestController::class, 'home'])->name('home');
+require_once __DIR__ . "/public/index.php";
+require_once __DIR__ . "/client/index.php";
+require_once __DIR__ . "/admin/index.php";
 
-Route::get("/test", [TestController::class, 'test'])->name('test');

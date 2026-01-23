@@ -1,4 +1,4 @@
-import './bootstrap';
+import "../css/public.css";
 
 import { createApp, h } from 'vue'
 import type { DefineComponent } from 'vue'

@@ -7,14 +7,19 @@ use Inertia\Middleware;
 
 class HandleInertiaRequests extends Middleware
 {
-    /**
-     * The root template that's loaded on the first page visit.
-     *
-     * @see https://inertiajs.com/server-side-setup#root-template
-     *
-     * @var string
-     */
-    protected $rootView = 'app';
+
+    public function rootView(Request $request): string
+    {
+        if( str_contains($request->route()->getPrefix(), config('project.app_admin_name')) ) {
+            return "admin";
+        }
+
+        if( str_contains($request->route()->getPrefix(), config('project.app_client_name')) ) {
+            return "client";
+        }
+
+        return "public";
+    }
 
     /**
      * Determines the current asset version.
